@@ -85,7 +85,7 @@ class Login extends StatelessWidget {
                         height: 17,
                       ),
                       ElevatedButton(
-                        onPressed: () {         },
+                        onPressed: () {},
                         child: Text(
                           "login",
                           style: TextStyle(fontSize: 24),
@@ -104,16 +104,18 @@ class Login extends StatelessWidget {
                       SizedBox(
                         height: 17,
                       ),
-                      
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text("Don't have an accout? "),
-
                           GestureDetector(
-                            onTap: (){ Navigator.pushNamed(context, "/signup");},
-                            child: Text(" Sign up", style: TextStyle(fontWeight: FontWeight.bold),)),
-
+                              onTap: () {
+                                Navigator.pushNamed(context, "/signup");
+                              },
+                              child: Text(
+                                " Sign up",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              )),
                         ],
                       )
                     ],

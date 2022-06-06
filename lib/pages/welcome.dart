@@ -23,17 +23,20 @@ class Welcome extends StatelessWidget {
                     SizedBox(
                       height: 35,
                     ),
-                  
-                    Text("Welcome", style: TextStyle(fontSize: 33, fontFamily: "myfont"),),
+                    Text(
+                      "Welcome",
+                      style: TextStyle(fontSize: 33, fontFamily: "myfont"),
+                    ),
                     SizedBox(
                       height: 35,
                     ),
-                  
-                    SvgPicture.asset("assets/icons/chat.svg", width: 288,),
+                    SvgPicture.asset(
+                      "assets/icons/chat.svg",
+                      width: 288,
+                    ),
                     SizedBox(
                       height: 35,
                     ),
-                  
                     ElevatedButton(
                       onPressed: () {
                         Navigator.pushNamed(context, "/login");
@@ -43,7 +46,8 @@ class Welcome extends StatelessWidget {
                         style: TextStyle(fontSize: 24),
                       ),
                       style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(Colors.purple),
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.purple),
                         padding: MaterialStateProperty.all(
                             EdgeInsets.symmetric(horizontal: 79, vertical: 10)),
                         shape: MaterialStateProperty.all(RoundedRectangleBorder(
@@ -53,7 +57,6 @@ class Welcome extends StatelessWidget {
                     SizedBox(
                       height: 22,
                     ),
-                  
                     ElevatedButton(
                       onPressed: () {
                         Navigator.pushNamed(context, "/signup");
